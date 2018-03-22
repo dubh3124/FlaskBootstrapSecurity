@@ -1,6 +1,6 @@
 from flask import current_app
 
-from flask.ext.testing import TestCase
+from flask_testing import TestCase
 
 from flask_application import app
 from flask_application.script import ResetDB, PopulateDB

@@ -58,7 +58,7 @@ from flask_bootstrap import Bootstrap
 Bootstrap(app)
 
 # Assets
-from flask.ext.assets import Environment
+from flask_assets import Environment
 assets = Environment(app)
 # Ensure output directory exists
 assets_output_dir = os.path.join(FLASK_APP_DIR, '..', 'static', 'gen')
@@ -66,11 +66,11 @@ if not os.path.exists(assets_output_dir):
     os.mkdir(assets_output_dir)
 
 # Email
-from flask.ext.mail import Mail
+from flask_mail import Mail
 app.mail = Mail(app)
 
 # Memcache
-from flask.ext.cache import Cache
+from flask_cache import Cache
 app.cache = Cache(app)
 
 # MongoEngine
@@ -78,7 +78,7 @@ from flask_application.models import db
 app.db = db
 app.db.init_app(app)
 
-from flask.ext.security import Security, MongoEngineUserDatastore
+from flask_security import Security, MongoEngineUserDatastore
 from flask_application.users.models import User, Role
 
 # Setup Flask-Security

@@ -1,5 +1,5 @@
 from flask import Blueprint
-from flask.ext.security import roles_required, roles_accepted
+from flask_security import roles_required, roles_accepted
 
 from flask_application.controllers import TemplateView
 

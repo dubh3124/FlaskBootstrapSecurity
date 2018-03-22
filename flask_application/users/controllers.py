@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from flask.ext.security import login_required
+from flask_security import login_required
 
 from flask_application.controllers import TemplateView
 

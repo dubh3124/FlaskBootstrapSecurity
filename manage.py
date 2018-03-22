@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-from flask.ext.script import Manager
-from flask.ext.script.commands import Server, Shell, ShowUrls, Clean
-from flask.ext.security.script import CreateUserCommand, AddRoleCommand,\
+from flask_script import Manager
+from flask_script.commands import Server, Shell, ShowUrls, Clean
+from flask_security.script import CreateUserCommand, AddRoleCommand,\
     RemoveRoleCommand, ActivateUserCommand, DeactivateUserCommand
 
 from flask_application import app

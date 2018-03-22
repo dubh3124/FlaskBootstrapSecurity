@@ -1,7 +1,7 @@
 from flask import current_app
 
-from flask.ext.script import Command
-from flask.ext.security.confirmable import confirm_user
+from flask_script import Command
+from flask_security.confirmable import confirm_user
 
 from flask_application.models import FlaskDocument
 
